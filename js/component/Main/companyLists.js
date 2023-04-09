@@ -43,8 +43,6 @@ export default class companyLists extends Component {
     }
   }
 
-
-
   // ***************************************functions*************************************************
   static hover() {
     companyCardHover()

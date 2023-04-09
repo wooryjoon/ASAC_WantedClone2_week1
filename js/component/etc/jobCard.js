@@ -14,7 +14,7 @@ export default class jobCard {
   }
   render() {
     this.el.innerHTML = /*html*/ `
-        <div class="jobCard">
+        <a href="/" class="jobCard">
             <img src="${this.img}" alt="" class="jobCard_img" />
             <div class="jobCard_content">
                 <div>${this.position}</div>
@@ -27,7 +27,7 @@ export default class jobCard {
                 <div>${this.location}</div>
                 <div>채용보상금 ${this.pay}원</div>
             </div>
-        </div>
+        </a>
         `
   }
 }
