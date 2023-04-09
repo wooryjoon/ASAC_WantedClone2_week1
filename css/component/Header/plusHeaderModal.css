@@ -1,0 +1,117 @@
+/* PlusHeader - Modal */
+.plusHeader_modal {
+  border: 1px solid gray;
+  z-index: 99;
+  position: absolute;
+}
+
+/* PlusHeader1 Modals */
+
+/* 헤더1의 모달1 */
+
+.plusHeader1_Btn1 {
+  transition: all 0.2s ease-in-out;
+}
+.plusHeader1_Btn1.rotate1 {
+  transform: rotate(180deg);
+}
+.plusHeader1_Btn1:hover {
+  border: 1px solid black;
+}
+
+.plusHeader_modal.one {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 40px;
+  overflow-x: hidden;
+  max-width: 220px;
+  height: 70vh;
+  background-color: #fff;
+  border: 1px solid #e1e2e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  z-index: 99;
+  padding: 15px 0;
+  visibility: hidden;
+}
+.plusHeader_modal.one ul {
+  height: 100%;
+  font-size: 15px;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.plusHeader_modal.one ul li {
+  width: 100%;
+  height: 100%;
+}
+.plusHeader_modal.one ul li a {
+  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+.plusHeader_modal.one.show {
+  visibility: visible;
+}
+
+/* 헤더1의 모달2 */
+.plusHeader1_Btn2:hover {
+  border: 1px solid black;
+}
+.plusHeader1_Btn2 {
+  transition: all 0.2s ease-in-out;
+}
+.plusHeader1_Btn2.rotate1 {
+  transform: rotate(180deg);
+}
+
+.plusHeader_modal.two {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  top: 40px;
+  width: 700px;
+  height: 200px;
+  max-width: 910px;
+  display: table;
+  background-color: #fff;
+  border: 1px solid #e1e2e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  visibility: hidden;
+}
+.plusHeader_modal.two .one {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  font-size: 12px;
+}
+.plusHeader_modal.two .two {
+  display: flex;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+.plusHeader_modal.two .three {
+  display: flex;
+  font-size: 16px;
+  color: cornflowerblue;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  justify-content: flex-end;
+}
+.plusHeader_modal.two.show {
+  visibility: visible;
+}
+/* PlusHeader2 Modals */

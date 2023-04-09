@@ -1,0 +1,66 @@
+.companyCard {
+  width: 200px;
+  height: 245px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.companyCard_imgContainer {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+}
+.companyCard_imgContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.companyCard_imgContainer img.hover {
+  transform: scale(1.05);
+}
+.companyCard_textContainer {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.companyCard_textContainer :first-child {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: flex-start;
+  font-size: 15px;
+  align-items: flex-start;
+  /* align-items: ; */
+}
+.companyCard_textContainer :first-child :first-child {
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  padding: 3px;
+}
+.companyCard_textContainer :first-child :first-child.hover {
+  color: #258bf7;
+}
+.companyCard_textContainer :first-child :nth-child(2) {
+  color: gray;
+  opacity: 0.8;
+  padding: 3px;
+  font-size: 13px;
+}
+
+.companyCard_logo {
+  position: absolute;
+  background-color: blue;
+  left: 15px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border: 1px solid lightgray;
+  top: 110px;
+}

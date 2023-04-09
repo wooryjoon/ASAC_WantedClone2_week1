@@ -1,0 +1,43 @@
+.jobCard {
+  height: 360px;
+}
+
+.jobCard_img {
+  width: 100%;
+  height: 58%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.jobCard_content {
+  padding: 5px;
+  display: flex;
+  height: 35%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.jobCard_content :nth-child(1) {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 5px;
+}
+.jobCard_content :nth-child(2) {
+  font-weight: bold;
+  font-size: 14px;
+}
+.jobCard_content :nth-child(3) span {
+  font-size: 9px;
+  padding: 3px;
+  border-radius: 3px;
+  color: #00aead;
+  border: 1px solid #00aead;
+}
+.jobCard_content :nth-child(4) {
+  font-size: 12px;
+  color: gray;
+  opacity: 0.8;
+}
+.jobCard_content :nth-child(5) {
+  font-size: 13px;
+  color: var(--main-color);
+  font-weight: bold;
+}

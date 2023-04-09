@@ -1,0 +1,226 @@
+.plusHeader {
+  width: 1100px;
+  margin: 0 auto;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  /* overflow-x: hidden; */
+}
+.plusHeader-wrapper {
+  padding: 10px;
+  width: 1100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+#plusHeader1.drop {
+  visibility: hidden;
+}
+.plusHeader1_content_container {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.plusHeader2_content_container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
+.plusHeader2_child1 {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+.plusHeader2_child2 {
+  margin-right: 30px;
+  width: 70px;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.plusHeader2_button {
+  width: 100px;
+  font-size: 13px;
+  border: 1px solid lightgray;
+  padding: 10px 13px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.P2B_1 :nth-child(3) {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3466ff;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 85px;
+  top: -9px;
+}
+.plusHeader_ghost {
+  width: 1px;
+  height: 15px;
+  border-left: 2px solid lightgray;
+}
+
+.plusHeader_ghost2 {
+  margin: 5px auto;
+  width: 98%;
+  height: 1px;
+  border-top: 1px solid lightgray;
+  opacity: 0.5;
+}
+.plusHeader_ghost3 {
+  margin-top: 5px;
+  width: 100vw;
+  height: 1px;
+  border-bottom: 1px solid lightgray;
+  margin-left: calc(-50vw + 50%);
+}
+.plusHeader_ghost3.drop {
+  border-bottom: 1px solid blue;
+  opacity: 0.8;
+}
+
+/* ****************************************************Carousel*************************************************** */
+
+/* overflow container */
+.plusHeader_carousel_container {
+  width: 95%;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/* 실제 움직일 슬라이드 통 */
+.plusHeader_carousel {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  /* justify-content: space-between; */
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  height: 25px;
+}
+
+/* 슬라이드 각각 */
+.plusHeader_carousel_child {
+  margin-left: 20px;
+  width: auto;
+  padding: 3px 20px;
+  height: 100%;
+  border-radius: 15px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.plusHeader_carousel_child img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+.plusHeader_carousel_child:hover {
+  border: 0.1px solid purple;
+}
+
+/* 슬라이더 버튼 */
+.plusHeaderBtn_wrapper {
+  width: 60px;
+  height: 25px;
+  padding: 5px;
+  position: absolute;
+  display: flex;
+  z-index: 200;
+  border-radius: 5px;
+}
+.plusHeaderBtn_wrapper.left {
+  left: -5px;
+  width: 100px;
+  height: 35px;
+  justify-content: flex-start;
+  background-color: white;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(hsla(0, 0%, 100%, 0)),
+    color-stop(40%, #fff)
+  );
+}
+.plusHeaderBtn_wrapper.right {
+  right: -5px;
+  width: 100px;
+  height: 35px;
+  justify-content: flex-end;
+  background-color: white;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(hsla(0, 0%, 100%, 0)),
+    color-stop(40%, #fff)
+  );
+}
+.plusHeader_prevBtn {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: white;
+}
+.plusHeader_nextBtn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  height: 35px;
+  width: 35px;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: white;
+}
+
+/* scroll Event */
+#headerScroll {
+  width: 1100px;
+  background-color: white;
+  z-index: 10;
+}
+
+#headerScroll.drop {
+  position: fixed;
+  top: 50px;
+  left: 200px;
+}

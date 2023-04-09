@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+/* smallComponent */
+@import "./component/etc/chevron.css";
+@import "./component/Main/bookMark.css";
+@import "./component//etc/companyCard.css";
+@import "./component/etc/jobCard.css";
+@import "./component/etc/banner1.css";
+/* bigComponents */
+@import "./component/Header/header.css";
+@import "./component/Header/plusHeader.css";
+@import "./component/Main/companyLists.css";
+@import "./component/Main/jobCardList.css";
+/* functional */
+@import "./component/Header/headerModal.css";
+@import "./component/Header/plusHeaderModal.css";
+html {
+  font-family: "Noto Sans KR", sans-serif;
+
+  --main-color: rgba(0, 0, 0, 0.88);
+  --main-width: 1050px;
+  box-sizing: border-box;
+  /* color: var(--main-color); */
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.comment {
+  position: relative;
+  padding: 20px 30px 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  /* opacity: 0.8; */
+}
+main {
+  width: 1200px;
+  margin: 60px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ghostLine {
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  margin-bottom: 40px;
+}

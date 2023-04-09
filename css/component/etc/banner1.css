@@ -1,0 +1,27 @@
+.banner1 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 90%;
+  height: 100px;
+  background: url("https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1940%2F4a485a58.jpg&w=1060&q=100")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+}
+.banner1 div {
+  flex: start;
+  padding-left: 100px;
+  color: white;
+  font-weight: bolder;
+}
+.banner1 div strong {
+  font-size: 20px;
+}
+.banner1 div small {
+  margin-top: 10px;
+  display: block;
+  font-size: 15px;
+}

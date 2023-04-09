@@ -1,0 +1,11 @@
+.jobCardList-container {
+  width: 90%;
+  height: 1200px;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
