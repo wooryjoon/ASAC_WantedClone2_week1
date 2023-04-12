@@ -5,6 +5,7 @@
 @import "./component//etc/companyCard.css";
 @import "./component/etc/jobCard.css";
 @import "./component/etc/banner1.css";
+@import "./component/etc/LoginModal.css";
 /* bigComponents */
 @import "./component/Header/header.css";
 @import "./component/Header/plusHeader.css";
@@ -13,6 +14,7 @@
 /* functional */
 @import "./component/Header/headerModal.css";
 @import "./component/Header/plusHeaderModal.css";
+@import "./component/etc/loading.css";
 html {
   font-family: "Noto Sans KR", sans-serif;
 
@@ -52,6 +54,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+section {
+  width: 100%;
+  height: 100%;
+}
+section.loading {
+  display: none;
 }
 .ghostLine {
   width: 90%;

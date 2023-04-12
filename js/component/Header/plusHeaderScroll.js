@@ -12,7 +12,7 @@ export default function plusHeaderScroll() {
   function showHeader() {
     let windowTop = window.scrollY
 
-    if (windowTop >= headerHeight - 10) {
+    if (windowTop >= 50) {
       $addHeader.classList.add("drop")
       $hideHeader.classList.add("drop")
       $ghostDiv.classList.add("drop")

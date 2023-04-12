@@ -151,15 +151,7 @@ export default class header extends Component {
         </div>
         <div class="option">
           <div class="option_wrap1">
-            <button class="option_search">
-              <i class="fa solid fa-magnifying-glass fa-lg"></i>
-            </button>
-            <button class="option_news">
-              <i class="fa-regular fa-bell fa-lg"></i>
-            </button>
-            <button class="option_user">
-              <i class="fa-regular fa-user fa-lg"></i>
-            </button>
+           <button style="font-weight:bold;">회원가입/로그인</button>
           </div>
           <div class="header_ghost"></div>
           <a class="option_wrap2"> <span>기업 서비스</span> </a>

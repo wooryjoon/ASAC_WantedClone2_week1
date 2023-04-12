@@ -4,21 +4,24 @@ import bookMark from "./component/Main/bookMark.js"
 import companyLists from "./component/Main/companyLists.js"
 import jobCardList from "./component/Main/jobCardList.js"
 import banner1 from "./component/etc/banner1.js"
-
-const body = document.querySelector("body") // body태그 잡아주기
+import LoginModal from "./component/etc/LoginModal.js"
+import loading from "./component/etc/loading.js"
+const section = document.querySelector("section") // body태그 잡아주기
 const main = document.querySelector("main")
 
-body.prepend(new header().el, new plusHeader().el)
-main.prepend(
+section.prepend(new plusHeader().el)
+section.prepend(new header().el)
+main.append(
   new bookMark().el,
   new companyLists().el,
   new jobCardList().el,
   new banner1().el.firstElementChild,
   new jobCardList().el
 )
+section.append(new LoginModal().el)
 
 /********************************부가 기능 Functions */
-
+loading()
 header.modal()
 header.carousel()
 header.scroll()

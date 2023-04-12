@@ -1,4 +1,3 @@
-
 export default function headerModal() {
   const $modalIcon = document.querySelector("#headerModal")
   const $modal = document.querySelector(".moreMenu")
@@ -7,7 +6,25 @@ export default function headerModal() {
   const $childModalNodes = document.querySelectorAll(
     ".menu_child_detail_container"
   )
-
+  // 로그인모달
+  const $loginToggle = document.querySelector(".option_wrap1")
+  const $loginModal = document.querySelector(".loginModal-background")
+  const $xBtn = document.querySelector(".cancel")
+  let isShow = false
+  $xBtn.addEventListener("click", () => {
+    $loginModal.classList.remove("show")
+    isShow = false
+  })
+  $loginToggle.addEventListener("click", () => {
+    if (isShow) {
+      isShow = false
+      $loginModal.classList.remove("show")
+    } else {
+      isShow = true
+      $loginModal.classList.add("show")
+    }
+    console.log(1123)
+  })
   /*세부 페이지 모달*/
   $childModalIconNodes.forEach((e, i) => {
     if (i === 0) return
